@@ -1,0 +1,2542 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>DE BEAUTYBEE CREATIVE | Diapers, Wipes & Household Essentials</title>
+
+  <meta
+    name="description"
+    content="DE BEAUTYBEE CREATIVE - Affordable diapers, wipes, tissues, pads, soaps, detergents and toiletries in Nigeria."
+  >
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <style>
+    :root {
+      --yellow: #ffd54f;
+      --yellow-dark: #f4c430;
+      --charcoal: #222831;
+      --white: #ffffff;
+      --gray: #f4f4f4;
+      --shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      --radius: 18px;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      min-height: 100vh;
+      background:
+        radial-gradient(circle at top left, rgba(255, 213, 79, 0.18), transparent 25%),
+        radial-gradient(circle at bottom right, rgba(244, 196, 48, 0.15), transparent 25%),
+        linear-gradient(135deg, #fffdf6 0%, #fff7d6 50%, #ffffff 100%);
+      color: var(--charcoal);
+      font-family: "Poppins", sans-serif;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    img {
+      display: block;
+      max-width: 100%;
+    }
+
+    button,
+    input {
+      font-family: inherit;
+    }
+
+    .container {
+      width: min(1200px, 92%);
+      margin: auto;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: var(--white);
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .nav {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 1rem 0;
+    }
+
+    .logo {
+      color: var(--charcoal);
+      font-size: 1.4rem;
+      font-weight: 700;
+    }
+
+    .logo span {
+      color: var(--yellow-dark);
+    }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1.2rem;
+    }
+
+    .nav-links a {
+      padding: 0.4rem 0.2rem;
+      font-weight: 500;
+    }
+
+    .nav-links a:hover {
+      color: var(--yellow-dark);
+    }
+
+    .hero {
+      padding: 5rem 0 4rem;
+      background: linear-gradient(135deg, #fff7d6 0%, #ffffff 100%);
+    }
+
+    .hero-content {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      align-items: center;
+      gap: 2rem;
+    }
+
+    .hero h1 {
+      margin-bottom: 1rem;
+      font-size: clamp(2rem, 5vw, 3.6rem);
+      line-height: 1.1;
+    }
+
+    .hero p {
+      margin-bottom: 1.5rem;
+      color: #555;
+    }
+
+    .hero-image {
+      display: flex;
+      justify-content: center;
+    }
+
+    .hero-image img {
+      width: min(100%, 460px);
+      border-radius: 28px;
+      object-fit: cover;
+      box-shadow: var(--shadow);
+    }
+
+    .btn-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.9rem 1.5rem;
+      border: 0;
+      border-radius: 999px;
+      cursor: pointer;
+      font: inherit;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-primary,
+    .btn-cart {
+      background: var(--yellow-dark);
+      color: var(--charcoal);
+    }
+
+    .btn-secondary {
+      background: var(--charcoal);
+      color: white;
+    }
+
+    .delivery-note {
+      margin-top: 1rem;
+      color: #555;
+      font-size: 0.95rem;
+      font-weight: 500;
+    }
+
+    section {
+      padding: 4rem 0;
+    }
+
+    .section-title {
+      margin-bottom: 2rem;
+      text-align: center;
+    }
+
+    .section-title h2 {
+      margin-bottom: 0.5rem;
+      font-size: 2rem;
+    }
+
+    .section-title p {
+      color: #666;
+    }
+
+    .price-note {
+      max-width: 700px;
+      margin: 1rem auto 0;
+      color: #7a5b00;
+      font-size: 0.95rem;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    /* CATEGORY BUTTONS */
+
+    .categories {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 1rem;
+    }
+
+    .category {
+      padding: 1.2rem;
+      border: 2px solid transparent;
+      border-radius: var(--radius);
+      background: white;
+      box-shadow: var(--shadow);
+      font-weight: 600;
+      text-align: center;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .category:hover {
+      transform: translateY(-4px);
+      border-color: var(--yellow-dark);
+      background: #fffdf3;
+    }
+
+    .category.active {
+      border-color: var(--yellow-dark);
+      background: #fff7d6;
+    }
+
+    .category-clear {
+      margin-top: 1.2rem;
+      text-align: center;
+    }
+
+    /* SEARCH */
+
+    .search-bar {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 0.8rem;
+    }
+
+    .search-bar input {
+      width: min(100%, 500px);
+      padding: 0.9rem 1rem;
+      border: 1px solid #ddd;
+      border-radius: 999px;
+      outline: none;
+      font-size: 1rem;
+    }
+
+    .search-bar input:focus {
+      border-color: var(--yellow-dark);
+      box-shadow: 0 0 0 3px rgba(244, 196, 48, 0.15);
+    }
+
+    .search-status {
+      min-height: 1.5rem;
+      margin-bottom: 1.5rem;
+      color: #666;
+      font-size: 0.9rem;
+      text-align: center;
+    }
+
+    /* PRODUCTS */
+
+    .products-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .product-section-title {
+      grid-column: 1 / -1;
+      margin-top: 1rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 3px solid var(--yellow-dark);
+      font-size: 1.4rem;
+    }
+
+    .product-section-title:first-child {
+      margin-top: 0;
+    }
+
+    .product-card {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      border-radius: var(--radius);
+      background: white;
+      box-shadow: var(--shadow);
+      transition: transform 0.3s ease;
+    }
+
+    .product-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .product-card[hidden] {
+      display: none;
+    }
+
+    .product-image {
+      display: grid;
+      height: 150px;
+      padding: 1rem;
+      place-items: center;
+      background: linear-gradient(135deg, #fff7d6, #ffd54f);
+      color: var(--charcoal);
+      font-size: 0.9rem;
+      font-weight: 700;
+      text-align: center;
+    }
+
+    .product-image img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+
+    .product-info {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      padding: 1rem;
+    }
+
+    .product-brand {
+      margin-bottom: 0.25rem;
+      color: #666;
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .product-info h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.05rem;
+    }
+
+    .price {
+      margin-bottom: 1rem;
+      color: var(--yellow-dark);
+      font-size: 1.1rem;
+      font-weight: 700;
+    }
+
+    .card-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: auto;
+    }
+
+    .btn-small {
+      flex: 1;
+      min-width: 110px;
+      padding: 0.75rem 0.9rem;
+      border: 0;
+      border-radius: 12px;
+      cursor: pointer;
+      font: inherit;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-align: center;
+    }
+
+    .btn-whatsapp {
+      background: #25d366;
+      color: white;
+    }
+
+    .about,
+    .contact {
+      padding: 2rem;
+      border-radius: var(--radius);
+      background: white;
+      box-shadow: var(--shadow);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    footer {
+      margin-top: 3rem;
+      padding: 2rem 0;
+      background: var(--charcoal);
+      color: white;
+      text-align: center;
+    }
+
+    /* FLOATING BUTTONS */
+
+    .floating-whatsapp,
+    .cart-button {
+      position: fixed;
+      right: 18px;
+      z-index: 1001;
+      display: grid;
+      width: 58px;
+      height: 58px;
+      border: 0;
+      border-radius: 50%;
+      cursor: pointer;
+      place-items: center;
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    }
+
+    .floating-whatsapp {
+      bottom: 18px;
+      background: #25d366;
+      color: white;
+      font-size: 1.6rem;
+    }
+
+    .cart-button {
+      bottom: 90px;
+      background: var(--yellow-dark);
+      color: var(--charcoal);
+      font-size: 1.35rem;
+    }
+
+    .cart-count {
+      position: absolute;
+      top: -5px;
+      right: -5px;
+      display: grid;
+      min-width: 22px;
+      height: 22px;
+      padding: 0 4px;
+      border-radius: 999px;
+      place-items: center;
+      background: #25d366;
+      color: white;
+      font-size: 0.75rem;
+      font-weight: 700;
+    }
+
+    /* CART */
+
+    .cart-panel {
+      position: fixed;
+      inset: 0 0 0 auto;
+      z-index: 1100;
+      display: flex;
+      width: min(100%, 420px);
+      padding: 1.25rem;
+      transform: translateX(105%);
+      flex-direction: column;
+      background: white;
+      box-shadow: -12px 0 30px rgba(0, 0, 0, 0.18);
+      transition: transform 0.25s ease;
+    }
+
+    .cart-panel.is-open {
+      transform: translateX(0);
+    }
+
+    .cart-header,
+    .cart-item,
+    .cart-footer {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+    }
+
+    .cart-header {
+      padding-bottom: 1rem;
+      border-bottom: 1px solid #eee;
+    }
+
+    .cart-header h2 {
+      font-size: 1.3rem;
+    }
+
+    .icon-button {
+      border: 0;
+      background: transparent;
+      cursor: pointer;
+      font-size: 1.6rem;
+    }
+
+    .cart-items {
+      flex: 1;
+      overflow-y: auto;
+      padding: 0.75rem 0;
+    }
+
+    .cart-item {
+      padding: 0.8rem 0;
+      border-bottom: 1px solid #eee;
+    }
+
+    .cart-item-name {
+      margin-right: auto;
+      font-size: 0.9rem;
+      font-weight: 600;
+    }
+
+    .quantity-controls {
+      display: flex;
+      align-items: center;
+      gap: 0.45rem;
+    }
+
+    .quantity-controls button,
+    .remove-item {
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      background: white;
+      cursor: pointer;
+      font: inherit;
+    }
+
+    .quantity-controls button {
+      width: 28px;
+      height: 28px;
+      font-size: 1.1rem;
+    }
+
+    .remove-item {
+      padding: 0.35rem 0.5rem;
+      color: #b42318;
+      font-size: 0.78rem;
+    }
+
+    .cart-footer {
+      flex-direction: column;
+      align-items: stretch;
+      padding-top: 1rem;
+      border-top: 1px solid #eee;
+    }
+
+    .cart-total {
+      font-size: 1.05rem;
+      font-weight: 700;
+    }
+
+    .cart-empty {
+      padding: 2rem 0;
+      color: #666;
+      text-align: center;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+    }
+
+    :focus-visible {
+      outline: 3px solid #1e6cff;
+      outline-offset: 3px;
+    }
+
+    @media (max-width: 768px) {
+      .nav {
+        flex-direction: column;
+        gap: 0.8rem;
+      }
+
+      .nav-links {
+        gap: 0.7rem;
+        font-size: 0.9rem;
+      }
+
+      .hero {
+        padding-top: 3rem;
+      }
+
+      .hero-content {
+        text-align: center;
+      }
+
+      .btn-group {
+        justify-content: center;
+      }
+
+      .card-actions {
+        flex-direction: column;
+      }
+
+      .categories {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .cart-panel {
+        width: 100%;
+      }
+      @media (max-width: 600px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 0.8rem;
+  }
+
+  .product-image {
+    height: 120px;
+    padding: 0.5rem;
+  }
+
+  .product-info {
+    padding: 0.75rem;
+  }
+
+  .product-info h3 {
+    font-size: 0.9rem;
+  }
+
+  .product-brand {
+    font-size: 0.7rem;
+  }
+
+  .price {
+    font-size: 0.95rem;
+  }
+
+  .btn-small {
+    min-width: 0;
+    width: 100%;
+    padding: 0.65rem 0.5rem;
+    font-size: 0.8rem;
+  }
+}
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+
+    <a class="logo" href="#home">
+      DE <span>BEAUTYBEE</span> CREATIVE
+    </a>
+
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#categories">Categories</a>
+      <a href="#products">Products</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+  </div>
+</header>
+
+
+<main>
+
+  <!-- HERO -->
+
+  <section class="hero" id="home">
+    <div class="container hero-content">
+
+      <div>
+
+        <h1>
+          Affordable Diapers, Wipes & Household Essentials
+        </h1>
+
+        <p>
+          Wholesale and retail prices on trusted brands like Molfix,
+          Kisskid, Yara, Soft Care, Rose Plus, Carla, Belle, Dr Brown,
+          Angel, Nightingale, So Klin, Good Mama, and Viva Soap.
+        </p>
+
+        <div class="btn-group">
+
+          <a href="#products" class="btn btn-primary">
+            Shop Now
+          </a>
+
+          <a
+            href="https://wa.me/2348053219421"
+            class="btn btn-secondary"
+            target="_blank"
+          >
+            Order on WhatsApp
+          </a>
+
+        </div>
+
+        <p class="delivery-note">
+          Fast delivery available in Lagos and nationwide.
+        </p>
+
+      </div>
+
+      <div class="hero-image">
+
+        <img
+          src="https://images.unsplash.com/photo-1515488042361-ee00e0ddd4e4?auto=format&fit=crop&w=900&q=80"
+          alt="Baby care and household essentials"
+        >
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- CATEGORIES -->
+
+  <section id="categories">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>Product Categories</h2>
+
+        <p>
+          Everything you need for baby care and everyday household essentials.
+        </p>
+
+      </div>
+
+      <div class="categories">
+
+        <button class="category" data-category="Diapers">
+          Baby Diapers & Pants
+        </button>
+
+        <button class="category" data-category="Pads">
+          Pads
+        </button>
+
+        <button class="category" data-category="Wipes">
+          Wipes
+        </button>
+
+        <button class="category" data-category="Tissues">
+          Tissues
+        </button>
+
+        <button class="category" data-category="Adult Care">
+          Adult Care
+        </button>
+
+        <button class="category" data-category="Pantyliners">
+          Pantyliners
+        </button>
+
+        <button
+          class="category"
+          data-category="Soaps, Detergents & Cotton Wool"
+        >
+          Soaps & Detergents
+        </button>
+
+        <button
+          class="category"
+          data-category="Soaps, Detergents & Cotton Wool"
+        >
+          Cotton Wool
+        </button>
+
+        <button class="category" data-category="Toiletries">
+          Toiletries
+        </button>
+
+      </div>
+
+      <div class="category-clear">
+
+        <button
+          type="button"
+          class="btn btn-secondary"
+          id="showAllProducts"
+        >
+          Show All Products
+        </button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- PRODUCTS -->
+
+  <section id="products">
+
+    <div class="container">
+
+      <div class="section-title">
+
+        <h2>Featured Products</h2>
+
+        <p>
+          Popular wholesale and retail products available for fast delivery across Nigeria.
+        </p>
+
+        <p class="price-note">
+          Prices may change based on supplier updates.
+          You will be directed to WhatsApp before payment.
+        </p>
+
+      </div>
+
+
+      <div class="search-bar">
+
+        <label
+          class="sr-only"
+          for="productSearch"
+        >
+          Search products
+        </label>
+
+        <input
+          type="search"
+          id="productSearch"
+          placeholder="Search products..."
+          autocomplete="off"
+        >
+
+      </div>
+
+
+      <p
+        class="search-status"
+        id="searchStatus"
+        role="status"
+      ></p>
+
+
+      <div
+        class="products-grid"
+        id="productGrid"
+      ></div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ABOUT -->
+
+  <section id="about">
+
+    <div class="container">
+
+      <div class="about">
+
+        <div class="section-title">
+
+          <h2>
+            About DE BEAUTYBEE CREATIVE
+          </h2>
+
+        </div>
+
+        <p>
+          <strong>DE BEAUTYBEE CREATIVE</strong> is a trusted Nigerian supplier
+          of baby care and household products, offering quality diapers, wipes,
+          tissues, kitchen towels, sanitary pads, soaps, detergents, toiletries,
+          adult diapers, and other everyday essentials at competitive wholesale
+          and retail prices.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CONTACT -->
+
+  <section id="contact">
+
+    <div class="container">
+
+      <div class="contact">
+
+        <div class="section-title">
+
+          <h2>
+            Contact Us
+          </h2>
+
+        </div>
+
+
+        <div class="contact-grid">
+
+          <div>
+            <strong>Business Name</strong>
+            <p>DE BEAUTYBEE CREATIVE</p>
+          </div>
+
+          <div>
+            <strong>Phone</strong>
+            <p>
+              <a href="tel:+2348053219421">
+                +234 805 321 9421
+              </a>
+            </p>
+          </div>
+
+          <div>
+            <strong>Email</strong>
+            <p>
+              <a href="mailto:info@debeautybeecreative.com">
+                info@debeautybeecreative.com
+              </a>
+            </p>
+          </div>
+
+          <div>
+            <strong>Location</strong>
+            <p>
+              No. 16B, Gbadamosi Street, Ojodu Berger, Lagos, Nigeria
+            </p>
+          </div>
+
+          <div>
+            <strong>Business Hours</strong>
+            <p>
+              Mon–Sat, 8 AM–6 PM
+            </p>
+          </div>
+
+          <div>
+            <strong>WhatsApp</strong>
+            <p>
+              <a
+                href="https://wa.me/2348053219421"
+                class="btn btn-primary"
+                target="_blank"
+              >
+                Chat on WhatsApp
+              </a>
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+</main>
+
+
+<footer>
+
+  <div class="container">
+
+    <p>
+      © 2026 DE BEAUTYBEE CREATIVE. All rights reserved.
+    </p>
+
+  </div>
+
+</footer>
+
+
+<!-- FLOATING WHATSAPP -->
+
+<a
+  href="https://wa.me/2348053219421"
+  class="floating-whatsapp"
+  aria-label="Chat with DE BEAUTYBEE on WhatsApp"
+  target="_blank"
+>
+  💬
+</a>
+
+
+<script>
+
+  const WHATSAPP_NUMBER = "2348053219421";
+
+  let cart = [];
+  
+  try {
+  cart = JSON.parse(localStorage.getItem("beautybeeCart")) || [];
+
+  if (!Array.isArray(cart)) {
+    cart = [];
+  }
+} catch (error) {
+  cart = [];
+}
+
+function saveCart() {
+  localStorage.setItem("beautybeeCart", JSON.stringify(cart));
+}
+
+
+  const productSearch =
+    document.getElementById("productSearch");
+
+  const searchStatus =
+    document.getElementById("searchStatus");
+
+  const productGrid =
+    document.getElementById("productGrid");
+
+
+  /* ==========================================
+     INVENTORY
+  ========================================== */
+
+  const inventory = [
+    // ==================== DIAPERS ====================
+  {
+    category: "Diapers",
+    brand: "Molfix",
+    name: "Jumbo",
+    price: 30000,
+    image: "images/molfix-jumbo.jpg"
+  },
+  {
+    category: "Diapers",
+    brand: "Molfix",
+    name: "Eco",
+    price: 15400,
+    image: "images/molfix-eco.jpg"
+  },
+  {
+    category: "Diapers",
+    brand: "Molfix",
+    name: "Small",
+    price: 10000,
+    image: "images/molfix-small.jpg"
+  },
+
+  {
+    category: "Diapers",
+    brand: "Molfix Jumbo Pant",
+    name: "Jumbo",
+    price: 41700,
+    image: "images/molfix-jumbo-pant-jumbo.jpg"
+  },
+  {
+    category: "Diapers",
+    brand: "Molfix Jumbo Pant",
+    name: "Eco",
+    price: 23400,
+    image: "images/molfix-jumbo-pant-eco.jpg"
+  },
+  {
+    category: "Diapers",
+    brand: "Molfix Jumbo Pant",
+    name: "Small",
+    price: 14900,
+    image: "images/molfix-jumbo-pant-small.jpg"
+  },
+
+  {
+    category: "Diapers",
+    brand: "Kisskid",
+    name: "Jumbo",
+    price: 31400,
+    image: "images/kisskid-jumbo.jpg"
+  },
+  {
+    category: "Diapers",
+    brand: "Kisskid",
+    name: "Eco",
+    price: 22900,
+    image: "images/kisskid-eco.jpg"
+  },
+  {
+    category: "Diapers",
+    brand: "Kisskid",
+    name: "Small",
+    price: 10600,
+    image: "images/kisskid-small.jpg"
+  },
+
+  {
+    category: "Diapers",
+    brand: "Yara",
+    name: "Jumbo",
+    price: 23000,
+    image: "images/yara jumbo.jpg"
+  },
+  {
+    category: "Diapers",
+    brand: "Yara",
+    name: "Eco",
+    price: 16500,
+    image: "images/yara eco.jpg"
+  },
+  {
+    category: "Diapers",
+    brand: "Yara",
+    name: "Small",
+    price: 9800,
+    image: "images/yara small.jpg"
+  },
+
+  {
+    category: "Diapers",
+    brand: "Kisskid Pant",
+    name: "Jumbo",
+    price: 26100,
+    image: "images/kisskid pantjumbo.jpg"
+  },
+
+  {
+    category: "Diapers",
+    brand: "Softcare Premium",
+    name: "Jumbo",
+    price: 32900,
+    image: "images/softcare premium jumbo.jpg"
+  },
+  {
+    category: "Diapers",
+    brand: "Softcare Premium",
+    name: "Eco",
+    price: 23500,
+    image: "images/softcare premium eco.jpg"
+  },
+
+  {
+    category: "Diapers",
+    brand: "Soft Care",
+    name: "Jumbo",
+    price: 30900,
+    image: "images/soft care jumbo.jpg"
+  },
+  {
+    category: "Diapers",
+    brand: "Soft Care",
+    name: "Eco",
+    price: 22500,
+    image: "images/soft care eco.jpg"
+  },
+  {
+    category: "Diapers",
+    brand: "Soft Care",
+    name: "Small",
+    price: 9900,
+    image: "images/soft care small.jpg"
+  },
+
+
+  // ==================== PADS ====================
+  {
+    category: "Pads",
+    brand: "",
+    name: "My Girl Zip",
+    price: 39000,
+    image: "images/my girl zip.jpg"
+  },
+  {
+    category: "Pads",
+    brand: "",
+    name: "Lady Care",
+    price: 8000,
+    image: "images/lady care pad.jpg"
+  },
+  {
+    category: "Pads",
+    brand: "",
+    name: "Diva Sachet",
+    price: 8000,
+    image: "images/diva sachet.jpg"
+  },
+  {
+    category: "Pads",
+    brand: "",
+    name: "Soft Care Zip",
+    price: 40000,
+    image: "images/soft care zip.jpg"
+  },
+  {
+    category: "Pads",
+    brand: "",
+    name: "Soft Care Box",
+    price: 13100,
+    image: "images/soft care box.jpg"
+  },
+  {
+    category: "Pads",
+    brand: "",
+    name: "Soft Care Sachet 3pcs",
+    price: 8000,
+    image: "images/soft care sachet 3pcs.jpg"
+  },
+  {
+    category: "Pads",
+    brand: "",
+    name: "Besense Zip",
+    price: 40000,
+    image: "images/besense zip.jpg"
+  },
+  {
+    category: "Pads",
+    brand: "",
+    name: "Besense Sachet",
+    price: 8000,
+    image: "images/besense sachet.jpg"
+  },
+  {
+    category: "Pads",
+    brand: "",
+    name: "Virony",
+    price: 60000,
+    image: "images/virony pad.jpg"
+  },
+  {
+    category: "Pads",
+    brand: "",
+    name: "Molped MT 7 by 18",
+    price: 15800,
+    image: "images/molped mt 7 by 18.jpg"
+  },
+  {
+    category: "Pads",
+    brand: "",
+    name: "Molped MT 14 by 8",
+    price: 14000,
+    image: "images/molped mt 14 by 8.jpg"
+  },
+  {
+    category: "Pads",
+    brand: "",
+    name: "Molped MT 28 by 8",
+    price: 23000,
+    image: "images/molped mt 28 by 8.jpg"
+  },
+  {
+    category: "Pads",
+    brand: "",
+    name: "Molped MT 36 by 8",
+    price: 23000,
+    image: "images/molped mt 36 by 8.jpg"
+  },
+  {
+    category: "Pads",
+    brand: "",
+    name: "Molped Ultra 7 by 18",
+    price: 18000,
+    image: "images/molped ultra 7 by 18.jpg"
+  },
+  {
+    category: "Pads",
+    brand: "",
+    name: "Molped Ultra 14 by 8",
+    price: 16000,
+    image: "images/molped ultra 14 by 8.jpg"
+  },
+  {
+    category: "Pads",
+    brand: "",
+    name: "Molped Ultra 28 by 8",
+    price: 27000,
+    image: "images/molped ultra 28 by 8.jpg"
+  },
+
+
+  // ==================== TISSUES ====================
+  {
+    category: "Tissues",
+    brand: "",
+    name: "Rose Plus",
+    price: 10300,
+    image: "images/rose plus.jpg"
+  },
+  {
+    category: "Tissues",
+    brand: "",
+    name: "Rose Plus Kitchen Towel",
+    price: 11350,
+    image: "images/rose plus kitchen towel.jpg"
+  },
+  {
+    category: "Tissues",
+    brand: "",
+    name: "Carla",
+    price: 40100,
+    image: "images/carla tissue paper.jpg"
+  },
+  {
+    category: "Tissues",
+    brand: "",
+    name: "Carla Kitchen Towel",
+    price: 23000,
+    image: "images/carla kitchen towel.jpg"
+  },
+  {
+    category: "Tissues",
+    brand: "",
+    name: "Belle Tissue",
+    price: 21500,
+    image: "images/belle tissue.jpg"
+  },
+  {
+    category: "Tissues",
+    brand: "",
+    name: "Belle Kitchen Towel",
+    price: 18000,
+    image: "images/belle kitchen towel.jpg"
+  },
+  {
+    category: "Tissues",
+    brand: "",
+    name: "Belle Kitchen Double Towel",
+    price: 17500,
+    image: "images/belle kitchen double towel.jpg"
+  },
+  {
+    category: "Tissues",
+    brand: "",
+    name: "Belle Serviette",
+    price: 13800,
+    image: "images/belle serviette.jpg"
+  },
+  {
+    category: "Tissues",
+    brand: "",
+    name: "Finetex Serviette",
+    price: 11800,
+    image: "images/finetex serviette.jpg"
+  },
+  {
+    category: "Tissues",
+    brand: "",
+    name: "Soft Wave Tissue",
+    price: 6900,
+    image: "images/softwave tissue.jpg"
+  },
+  {
+    category: "Tissues",
+    brand: "",
+    name: "Soft Wave Jumbo",
+    price: 6200,
+    image: "images/soft wave jumbo.jpg"
+  },
+  {
+    category: "Tissues",
+    brand: "",
+    name: "Car Box",
+    price: 32700,
+    image: "images/car box.jpg"
+  },
+  {
+    category: "Tissues",
+    brand: "",
+    name: "Soft Wave Jumbo Serviette",
+    price: 7800,
+    image: "images/soft wave jumbo serviette.jpg"
+  },
+
+
+  // ==================== ADULT CARE ====================
+  {
+    category: "Adult Care",
+    brand: "",
+    name: "Dr Brown Adult Diaper",
+    price: 80000,
+    image: "images/dr brown adult.jpg"
+  },
+  {
+    category: "Adult Care",
+    brand: "",
+    name: "Angel Pant Adult",
+    price: 90000,
+    image: "images/angel pant adult.jpg"
+  },
+  {
+    category: "Adult Care",
+    brand: "",
+    name: "Ladysept",
+    price: 29000,
+    image: "images/lady sept.jpg"
+  },
+
+
+  // ==================== WIPES ====================
+  {
+    category: "Wipes",
+    brand: "",
+    name: "Dr Brown",
+    price: 29000,
+    image: "images/dr brown wipes.jpg"
+  },
+  {
+    category: "Wipes",
+    brand: "",
+    name: "Angel",
+    price: 30000,
+    image: "images/angel wipes.jpg"
+  },
+  {
+    category: "Wipes",
+    brand: "",
+    name: "Kisskid Wipes",
+    price: 21000,
+    image: "images/kisskid wipes.jpg"
+  },
+  {
+    category: "Wipes",
+    brand: "",
+    name: "Nightingale",
+    price: 29000,
+    image: "images/nightingale wipes.jpg"
+  },
+  {
+    category: "Wipes",
+    brand: "",
+    name: "Angel Wipes Small",
+    price: 21500,
+    image: "images/angel wipes small.jpg"
+  },
+  {
+    category: "Wipes",
+    brand: "",
+    name: "Soft Care Wipes",
+    price: 16500,
+    image: "images/soft care wipes.jpg"
+  },
+  {
+    category: "Wipes",
+    brand: "",
+    name: "Dr Wipes Small",
+    price: 14500,
+    image: "images/dr wipes small.jpg"
+  },
+
+
+  // ==================== PANTYLINERS ====================
+  {
+    category: "Pantyliners",
+    brand: "",
+    name: "Pantyliner",
+    price: 17000,
+    image: "images/pantyliner.jpg"
+  },
+
+
+  // ==================== SOAPS, DETERGENTS & COTTON WOOL ====================
+  {
+    category: "Soaps, Detergents & Cotton Wool",
+    brand: "Viva Soap",
+    name: "1.7kg",
+    price: 15500,
+    image: "images/viva soap 1.7kg.jpg"
+  },
+  {
+    category: "Soaps, Detergents & Cotton Wool",
+    brand: "Viva Soap",
+    name: "170g",
+    price: 10750,
+    image: "images/viva soap 170g.jpg"
+  },
+  {
+    category: "Soaps, Detergents & Cotton Wool",
+    brand: "Viva Soap",
+    name: "80g",
+    price: 10100,
+    image: "images/viva soap 80g.jpg"
+  },
+  {
+    category: "Soaps, Detergents & Cotton Wool",
+    brand: "Viva Soap",
+    name: "800g",
+    price: 13100,
+    image: "images/viva soap 800g.jpg"
+  },
+  {
+    category: "Soaps, Detergents & Cotton Wool",
+    brand: "Viva Soap",
+    name: "Bar 250g White",
+    price: 15500,
+    image: "images/viva soap bar 250g white.jpg"
+  },
+  {
+    category: "Soaps, Detergents & Cotton Wool",
+    brand: "Viva Soap",
+    name: "Bar 250g Yellow",
+    price: 15500,
+    image: "images/viva soap bar 250g yellow.jpg"
+  },
+
+  {
+    category: "Soaps, Detergents & Cotton Wool",
+    brand: "Good Mama",
+    name: "Floral 800g 6+1",
+    price: 11000,
+    image: "images/good mama floral 800g.jpg"
+  },
+  {
+    category: "Soaps, Detergents & Cotton Wool",
+    brand: "Good Mama",
+    name: "Lemon 800g",
+    price: 11000,
+    image: "images/good mama lemon 800g.jpg"
+  },
+  {
+    category: "Soaps, Detergents & Cotton Wool",
+    brand: "Good Mama",
+    name: "Floral 350g",
+    price: 8500,
+    image: "images/good mama floral 350g.jpg"
+  },
+  {
+    category: "Soaps, Detergents & Cotton Wool",
+    brand: "Good Mama",
+    name: "Floral 170g",
+    price: 9100,
+    image: "images/good mama floral 170g.jpg"
+  },
+  {
+    category: "Soaps, Detergents & Cotton Wool",
+    brand: "Good Mama",
+    name: "Lemon 170g",
+    price: 9100,
+    image: "images/good mama lemon 170g.jpg"
+  },
+  {
+    category: "Soaps, Detergents & Cotton Wool",
+    brand: "Good Mama",
+    name: "Lemon 1.7kg",
+    price: 11600,
+    image: "images/good mama lemon 1.7kg.jpg"
+  },
+  {
+    category: "Soaps, Detergents & Cotton Wool",
+    brand: "Good Mama",
+    name: "Floral 1.7kg",
+    price: 11600,
+    image: "images/good mama floral 1.7kg.jpg"
+  },
+
+  {
+    category: "Soaps, Detergents & Cotton Wool",
+    brand: "So Klin",
+    name: "Automatic 1kg",
+    price: 13250,
+    image: "images/so klin automatic 1kg.jpg"
+  },
+  {
+    category: "Soaps, Detergents & Cotton Wool",
+    brand: "So Klin",
+    name: "Automatic 2kg",
+    price: 18750,
+    image: "images/so klin automatic 2kg.jpg"
+  },
+  {
+    category: "Soaps, Detergents & Cotton Wool",
+    brand: "So Klin",
+    name: "330g 12+1",
+    price: 9550,
+    image: "images/so klin 330g.jpg"
+  },
+  {
+    category: "Soaps, Detergents & Cotton Wool",
+    brand: "So Klin",
+    name: "Protect 160g",
+    price: 9550,
+    image: "images/so klin protect 160g.jpg"
+  },
+  {
+    category: "Soaps, Detergents & Cotton Wool",
+    brand: "So Klin",
+    name: "Ultra 160g",
+    price: 9550,
+    image: "images/so klin ultra 160g.jpg"
+  },
+
+  {
+    category: "Soaps, Detergents & Cotton Wool",
+    brand: "Cotton Wool",
+    name: "500g",
+    price: 1500,
+    image: "images/cotton wool 500g.jpg"
+  },
+  {
+    category: "Soaps, Detergents & Cotton Wool",
+    brand: "Cotton Wool",
+    name: "250g (12pcs)",
+    price: 3200,
+    image: "images/cotton wool 250g.jpg"
+  },
+  {
+    category: "Soaps, Detergents & Cotton Wool",
+    brand: "Cotton Wool",
+    name: "100g (12pcs)",
+    price: 2200,
+    image: "images/cotton wool 100g.jpg"
+  },
+  {
+    category: "Soaps, Detergents & Cotton Wool",
+    brand: "Cotton Wool",
+    name: "50g (12pcs)",
+    price: 1050,
+    image: "images/cotton wool 50g.jpg"
+  },
+
+  {
+    category: "Soaps, Detergents & Cotton Wool",
+    brand: "Dele Wool",
+    name: "500g",
+    price: 4200,
+    image: "images/dele wool 500g.jpg"
+  },
+  {
+    category: "Soaps, Detergents & Cotton Wool",
+    brand: "Dele Wool",
+    name: "250g",
+    price: 2300,
+    image: "images/dele wool 250g.jpg"
+  },
+  {
+    category: "Soaps, Detergents & Cotton Wool",
+    brand: "Dele Wool",
+    name: "100g",
+    price: 1000,
+    image: "images/dele wool 100g.jpg"
+  },
+
+
+  // ==================== TOILETRIES ====================
+  {
+    category: "Toiletries",
+    brand: "",
+    name: "Tura Soap",
+    price: 64000,
+    image: "images/tura soap.jpg"
+  },
+  {
+    category: "Toiletries",
+    brand: "",
+    name: "Roll On (Enchanteur)",
+    price: 47000,
+    image: "images/enchanteur roll on.jpg"
+  },
+  {
+    category: "Toiletries",
+    brand: "",
+    name: "Eva Bathing Soap",
+    price: 2700,
+    image: "images/eva bathing soap.jpg"
+  }
+];
+
+
+  /* ==========================================
+     PRICE FORMAT
+  ========================================== */
+
+  function formatPrice(value) {
+
+    return new Intl.NumberFormat("en-NG", {
+
+      style: "currency",
+
+      currency: "NGN",
+
+      maximumFractionDigits: 0
+
+    }).format(value);
+
+  }
+
+
+  /* ==========================================
+     RENDER PRODUCTS
+  ========================================== */
+
+  function renderProducts(categoryFilter = "") {
+
+    const searchTerm =
+      productSearch.value.trim().toLowerCase();
+
+    const sections = [
+      ...new Set(
+        inventory
+          .filter(product => {
+
+            const categoryMatch =
+              !categoryFilter ||
+              product.category === categoryFilter;
+
+            const fullName =
+              `${product.brand || ""} ${product.name}`
+              .trim()
+              .toLowerCase();
+
+            const searchMatch =
+              !searchTerm ||
+              fullName.includes(searchTerm) ||
+              product.category.toLowerCase().includes(searchTerm);
+
+            return categoryMatch && searchMatch;
+
+          })
+          .map(product => product.category)
+      )
+    ];
+
+
+    if (sections.length === 0) {
+
+      productGrid.innerHTML = `
+        <p style="
+          grid-column:1/-1;
+          text-align:center;
+          padding:2rem;
+          color:#666;
+        ">
+          No products found.
+        <br>
+          Try another search or category.
+        </p>
+      `;
+
+      return;
+
+    }
+
+
+    productGrid.innerHTML = sections.map(section => {
+
+      const products =
+        inventory.filter(product => {
+
+          const categoryMatch =
+            !categoryFilter ||
+            product.category === categoryFilter;
+
+          const productSection = product.category;
+          const brand = product.brand;
+          const name = product.name;
+          const fullName =
+            `${brand || ""} ${name}`
+              .trim()
+              .toLowerCase();
+
+          const searchMatch =
+            !searchTerm ||
+            fullName.includes(searchTerm) ||
+            productSection.toLowerCase().includes(searchTerm);
+
+          return (
+            productSection === section &&
+            categoryMatch &&
+            searchMatch
+          );
+
+        });
+
+
+const cards = products.map(product => {
+
+  const productSection = product.category;
+  const brand = product.brand;
+  const name = product.name;
+  const price = product.price;
+
+  const fullName = brand
+    ? `${brand} ${name}`
+    : name;
+
+  const whatsappMessage = encodeURIComponent(
+    `Hello DE BEAUTYBEE CREATIVE, I want to order ${fullName}.`
+  );
+
+  return `
+    <article
+      class="product-card"
+      data-name="${fullName.toLowerCase()}"
+      data-product-name="${fullName}"
+      data-price="${price}"
+    >
+
+      <div class="product-image">
+        <img
+          src="${product.image}"
+          alt="${fullName}"
+          loading="lazy"
+        >
+      </div>
+
+      <div class="product-info">
+
+        ${
+          brand
+            ? `<p class="product-brand">${brand}</p>`
+            : ""
+        }
+
+        <h3>${name}</h3>
+
+        <div class="price">
+          ${formatPrice(price)}
+        </div>
+
+        <div class="card-actions">
+
+          <button
+            type="button"
+            class="btn-small btn-cart"
+          >
+            Add to Cart
+          </button>
+
+          <a
+            href="https://wa.me/${WHATSAPP_NUMBER}?text=${whatsappMessage}"
+            class="btn-small btn-whatsapp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            WhatsApp
+          </a>
+
+        </div>
+
+      </div>
+
+    </article>
+  `;
+}).join("");
+
+      return `
+
+        <h3 class="product-section-title">
+          ${section}
+        </h3>
+
+        ${cards}
+
+      `;
+
+    }).join("");
+
+
+    attachCartButtons();
+
+  }
+
+
+  /* ==========================================
+     CART BUTTONS
+  ========================================== */
+
+  function attachCartButtons() {
+
+  document.querySelectorAll(".btn-cart").forEach(button => {
+
+    button.addEventListener("click", () => {
+
+      const card =
+        button.closest(".product-card");
+
+
+      const product = {
+
+        name:
+          card.dataset.productName,
+
+        price:
+          Number(card.dataset.price)
+
+      };
+
+
+      const existing =
+        cart.find(
+          item => item.name === product.name
+        );
+
+
+      if (existing) {
+
+        existing.quantity += 1;
+
+      } else {
+
+        cart.push({
+          ...product,
+          quantity: 1
+        });
+
+      }
+
+
+      /* SAVE + UPDATE CART */
+
+      saveCart();
+      renderCart();
+
+
+      button.textContent =
+        "Added ✓";
+
+
+      setTimeout(() => {
+
+        button.textContent =
+          "Add to Cart";
+
+      }, 900);
+
+    });
+
+  });
+
+}
+
+  /* ==========================================
+     INITIAL PRODUCTS
+  ========================================== */
+
+  renderProducts();
+
+
+  /* ==========================================
+     CATEGORY BUTTONS
+  ========================================== */
+
+  const categoryButtons =
+    document.querySelectorAll(".category");
+
+
+  categoryButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+      const category =
+        button.dataset.category;
+
+
+      categoryButtons.forEach(btn => {
+
+        btn.classList.remove("active");
+
+      });
+
+
+      button.classList.add("active");
+
+
+      /*
+        Clear search when selecting
+        a category.
+      */
+
+      productSearch.value = "";
+
+
+      /*
+        Render ONLY this category.
+      */
+
+      renderProducts(category);
+
+
+      /*
+        Update status.
+      */
+
+      searchStatus.textContent =
+        `Showing ${category}`;
+
+
+      /*
+        Take the user directly
+        to the Products section.
+      */
+
+      document
+        .getElementById("products")
+        .scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+
+    });
+
+  });
+
+
+  /* ==========================================
+     SHOW ALL PRODUCTS
+  ========================================== */
+
+  document
+    .getElementById("showAllProducts")
+    .addEventListener("click", () => {
+
+      categoryButtons.forEach(button => {
+
+        button.classList.remove("active");
+
+      });
+
+
+      productSearch.value = "";
+
+      searchStatus.textContent = "";
+
+      renderProducts();
+
+      document
+        .getElementById("products")
+        .scrollIntoView({
+          behavior: "smooth",
+          block: "start"
+        });
+
+    });
+
+
+  /* ==========================================
+     SEARCH
+  ========================================== */
+
+  productSearch.addEventListener(
+    "input",
+    function () {
+
+      const term =
+        this.value.trim().toLowerCase();
+
+
+      /*
+        Typing in search removes
+        the active category.
+      */
+
+      categoryButtons.forEach(button => {
+
+        button.classList.remove("active");
+
+      });
+
+
+      renderProducts();
+
+
+      if (!term) {
+
+        searchStatus.textContent = "";
+
+        return;
+
+      }
+
+
+      const visibleProducts =
+  inventory.filter(product => {
+
+    const fullName =
+      `${product.brand || ""} ${product.name}`
+        .trim()
+        .toLowerCase();
+
+    return (
+      fullName.includes(term) ||
+      product.category
+        .toLowerCase()
+        .includes(term)
+    );
+
+  });
+
+
+      searchStatus.textContent =
+        `${visibleProducts.length} product${
+          visibleProducts.length === 1
+            ? ""
+            : "s"
+        } found`;
+
+    }
+  );
+
+
+  /* ==========================================
+     CART UI
+  ========================================== */
+
+  const cartButton =
+    document.createElement("button");
+
+  cartButton.className =
+    "cart-button";
+
+  cartButton.type =
+    "button";
+
+  cartButton.setAttribute(
+    "aria-expanded",
+    "false"
+  );
+
+  cartButton.innerHTML =
+    `🛒<span class="cart-count">0</span>`;
+
+
+  const cartPanel =
+    document.createElement("aside");
+
+  cartPanel.className =
+    "cart-panel";
+
+  cartPanel.setAttribute(
+    "aria-hidden",
+    "true"
+  );
+
+
+  cartPanel.innerHTML = `
+
+    <div class="cart-header">
+
+      <h2>
+        Your Cart
+      </h2>
+
+      <button
+        type="button"
+        class="icon-button"
+        data-close-cart
+      >
+        ×
+      </button>
+
+    </div>
+
+
+    <div
+      class="cart-items"
+      id="cartItems"
+    ></div>
+
+
+    <div class="cart-footer">
+
+      <p
+        class="cart-total"
+        id="cartTotal"
+      >
+        Estimated total: ₦0
+      </p>
+
+
+      <button
+        type="button"
+        class="btn btn-primary"
+        id="whatsappCheckout"
+      >
+        Send order on WhatsApp
+      </button>
+
+    </div>
+
+  `;
+
+
+  document.body.append(
+    cartButton,
+    cartPanel
+  );
+
+
+  const cartItems =
+    document.getElementById("cartItems");
+
+  const cartTotal =
+    document.getElementById("cartTotal");
+
+  const cartCount =
+    cartButton.querySelector(".cart-count");
+
+
+  /* ==========================================
+     RENDER CART
+  ========================================== */
+
+  function renderCart() {
+
+  /* =========================
+     UPDATE CART COUNT
+  ========================= */
+
+  const totalItems = cart.reduce(
+    (sum, item) => sum + item.quantity,
+    0
+  );
+
+  cartCount.textContent = totalItems;
+
+
+  /* =========================
+     UPDATE CART ITEMS
+  ========================= */
+
+  if (cart.length === 0) {
+
+    cartItems.innerHTML = `
+      <p class="cart-empty">
+        Your cart is empty.
+      </p>
+    `;
+
+  } else {
+
+    cartItems.innerHTML = cart.map((item, index) => `
+
+      <div class="cart-item">
+
+        <span class="cart-item-name">
+
+          ${item.name}
+
+          <br>
+
+          <small>
+            ${formatPrice(item.price)} each
+          </small>
+
+        </span>
+
+
+        <div class="quantity-controls">
+
+          <button
+            type="button"
+            data-action="decrease"
+            data-index="${index}"
+            aria-label="Decrease quantity"
+          >
+            −
+          </button>
+
+
+          <span>
+            ${item.quantity}
+          </span>
+
+
+          <button
+            type="button"
+            data-action="increase"
+            data-index="${index}"
+            aria-label="Increase quantity"
+          >
+            +
+          </button>
+
+        </div>
+
+
+        <button
+          type="button"
+          class="remove-item"
+          data-action="remove"
+          data-index="${index}"
+        >
+          Remove
+        </button>
+
+      </div>
+
+    `).join("");
+
+  }
+
+
+  /* =========================
+     UPDATE TOTAL
+  ========================= */
+
+  const total = cart.reduce(
+    (sum, item) =>
+      sum + (item.price * item.quantity),
+    0
+  );
+
+
+  cartTotal.textContent =
+    `Estimated total: ${formatPrice(total)}`;
+
+
+  /* =========================
+     SAVE CART
+  ========================= */
+
+  saveCart();
+}
+
+  
+
+
+  /* ==========================================
+     CART OPEN/CLOSE
+  ========================================== */
+
+  function toggleCart(show) {
+
+    const isOpen =
+      typeof show === "boolean"
+        ? show
+        : !cartPanel.classList.contains(
+            "is-open"
+          );
+
+
+    cartPanel.classList.toggle(
+      "is-open",
+      isOpen
+    );
+
+
+    cartPanel.setAttribute(
+      "aria-hidden",
+      String(!isOpen)
+    );
+
+
+    cartButton.setAttribute(
+      "aria-expanded",
+      String(isOpen)
+    );
+
+  }
+
+
+  cartButton.addEventListener(
+    "click",
+    () => toggleCart()
+  );
+
+
+  /* ==========================================
+     CART CONTROLS
+  ========================================== */
+
+  cartPanel.addEventListener(
+    "click",
+    event => {
+
+      const button =
+        event.target.closest("button");
+
+
+      if (!button) return;
+
+
+      if (
+        button.matches(
+          "[data-close-cart]"
+        )
+      ) {
+
+        toggleCart(false);
+
+        return;
+
+      }
+
+
+      const index =
+        Number(button.dataset.index);
+
+
+      if (
+        !Number.isInteger(index) ||
+        !cart[index]
+      ) {
+
+        return;
+
+      }
+
+
+      if (button.dataset.action === "increase") {
+  cart[index].quantity += 1;
+}
+
+if (button.dataset.action === "decrease") {
+  cart[index].quantity -= 1;
+}
+
+if (
+  button.dataset.action === "remove" ||
+  cart[index].quantity < 1
+) {
+  cart.splice(index, 1);
+}
+
+/* SAVE CART AFTER EVERY CHANGE */
+
+saveCart();
+
+renderCart();
+
+
+      renderCart();
+
+    }
+  );
+
+
+  /* ==========================================
+     WHATSAPP CHECKOUT
+  ========================================== */
+
+  document
+    .getElementById("whatsappCheckout")
+    .addEventListener(
+      "click",
+      () => {
+
+        if (cart.length === 0) {
+
+          alert(
+            "Your cart is empty."
+          );
+
+          return;
+
+        }
+
+
+        const total =
+          cart.reduce(
+            (sum, item) =>
+              sum +
+              item.price *
+              item.quantity,
+            0
+          );
+
+
+        const orderLines =
+          cart.map(
+            item =>
+              `• ${item.name} × ${item.quantity} — ${formatPrice(
+                item.price *
+                item.quantity
+              )}`
+          );
+
+
+        const message = [
+
+          "Hello DE BEAUTYBEE CREATIVE, I would like to place this order:",
+
+          "",
+
+          ...orderLines,
+
+          "",
+
+          `Estimated total: ${formatPrice(total)}`,
+
+          "",
+
+          "Please confirm availability and delivery cost."
+
+        ].join("\n");
+
+
+        const whatsappURL =
+          `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+            message
+          )}`;
+
+
+        window.open(
+          whatsappURL,
+          "_blank"
+        );
+
+      }
+    );
+
+
+  /* ==========================================
+     ESCAPE KEY
+  ========================================== */
+
+  document.addEventListener(
+    "keydown",
+    event => {
+
+      if (
+        event.key === "Escape"
+      ) {
+
+        toggleCart(false);
+
+      }
+
+    }
+  );
+
+
+  /* ==========================================
+     INITIAL CART
+  ========================================== */
+
+  renderCart();
+
+</script>
+
+</body>
+</html>
